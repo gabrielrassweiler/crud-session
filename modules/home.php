@@ -20,22 +20,16 @@ if (isset($_GET['desconectar'])) {
 </head>
 <body>
     <hr style="margin-top: 50px; background-color:lightgray">
-    <div>
-        <div style="margin: 30px 0 30px 60px" class="col-sm-12">
+    <div style="margin-left: 40%">
+        <div style="margin: 30px 0 30px 105px" class="col-sm-12">
             <?php echo "<h3>Seja bem-vindo</h3>" ?>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-4">
             <ul class="list-group">
                 <li class="list-group-item"><?php echo "<a href='home.php'>Home</a>" ?></li>
                 <li class="list-group-item">Produtos</li>
                 <li class="list-group-item" style="padding-left: 40px;">
                     <?php echo "<a href='cadastrar.php'>Cadastrar</a>" ?>
-                </li>
-                <li class="list-group-item" style="padding-left: 40px;">
-                    <?php echo "<a href='alterar.php'>Alterar</a>" ?>
-                </li>
-                <li class="list-group-item" style="padding-left: 40px;">
-                    <?php echo "<a href='remover.php'>Remover</a>" ?>
                 </li>
                 <li class="list-group-item" style="padding-left: 40px;">
                     <?php echo "<a href='visualizar.php'>Visualizar</a>" ?>

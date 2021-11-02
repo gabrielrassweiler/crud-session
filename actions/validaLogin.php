@@ -1,9 +1,6 @@
 <?php
     // Cria conexão com o banco de dados
-    $conn = new PDO(
-        'mysql:host=localhost;dbname=desenvolvimentoweb1', 'root', ''
-    );
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    include_once 'conexao.php';
 
     // Pega os dados enviados da tela de login
     $login = $_POST['login'];
