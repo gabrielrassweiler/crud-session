@@ -15,10 +15,10 @@
     $resultado = $stmt->fetchAll();
 
     if (count($resultado)) {
+        session_start();
         $_SESSION['usuario'] = $resultado[0]['nome'];
-        echo 'Logado!';
+        header('Location: ../modules/home.php');
     } else {
-        echo 'Login ou senha incorretos!';
-        echo '<a href="index.php">Voltar</a>';
+        echo "<script language='javascript' type='text/javascript'>alert('Login e/ou Senha Incorretos!'); window.location.href='../index.php';</script>";
     }
 ?>
