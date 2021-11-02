@@ -14,8 +14,6 @@ include_once 'home.php';
         <input type="text" placeholder="Marca do produto" class="form-control" name="marca" id="marca" required>
         <label for="quantidade"><b>Quantidade</b></label>
         <input type="number" placeholder="Quantidade do produto" class="form-control" name="quantidade" id="quantidade" required>
-        <!-- <label for="valorTotal"><b>Valor total</b></label>
-        <input type="number" placeholder="Valor total do produto" class="form-control" name="valorTotal" id="valorTotal" required> -->
         <br>
         <input type="submit" class="btn btn-success" value="Gravar" style="float: right; padding-top: 10px;">
     </form>
