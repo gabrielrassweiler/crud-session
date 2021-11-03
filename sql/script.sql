@@ -5,3 +5,9 @@ create table produtos (
     marca varchar(100) not null,
     quantidade integer not null
 );
+
+CREATE TABLE `pessoas` (
+  `id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `senha` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

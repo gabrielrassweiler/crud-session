@@ -2,6 +2,13 @@
 
 include_once 'conexao.php';
 
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    session_destroy();
+    echo "<script>alert('Você precisa se autenticar!'); window.location.href='../index.php';</script>";
+}
+
 // Captura valores do form
 $nome = $_POST['nome'];
 $valor = $_POST['valor'];

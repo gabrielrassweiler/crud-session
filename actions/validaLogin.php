@@ -2,6 +2,13 @@
     // Cria conexão com o banco de dados
     include_once 'conexao.php';
 
+    session_start();
+    
+    if (!isset($_SESSION['usuario'])) {
+        session_destroy();
+        echo "<script>alert('Você precisa se autenticar!'); window.location.href='../index.php';</script>";
+    }
+
     // Pega os dados enviados da tela de login
     $login = $_POST['login'];
     $senha = md5($_POST['senha']);
